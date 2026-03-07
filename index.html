@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Scripter Portfolio</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:white;margin:0}
+header{padding:40px;text-align:center;background:#020617}
+section{padding:40px;max-width:900px;margin:auto}
+.project{background:#1e293b;padding:20px;border-radius:10px;margin-bottom:20px}
+button{padding:10px 16px;border:none;border-radius:8px;background:#38bdf8;color:black;font-weight:bold;cursor:pointer}
+footer{text-align:center;padding:20px;background:#020617}
+a{color:#38bdf8}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Roblox Scripter Portfolio</h1>
+<p>Commission Scripter | Lua | Roblox Systems</p>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>
+Hi! I'm a Roblox scripter who specializes in gameplay systems like inventories,
+round systems, abilities, and data saving. I'm currently taking commissions.
+</p>
+</section>
+
+<section>
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Round System</h3>
+<p>Lobby timer, map voting, player teleporting, and win detection.</p>
+</div>
+
+<div class="project">
+<h3>Pet System</h3>
+<p>Equip/unequip pets, multipliers, follower AI, and DataStore saving.</p>
+</div>
+
+<div class="project">
+<h3>Ability System</h3>
+<p>Keybind abilities with cooldowns and server-side validation.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Hire Me</h2>
+<p>If you're interested in commissioning me, contact me:</p>
+
+<p>Discord: <b>YourName#0000</b></p>
+<p>Roblox: <b>YourUsername</b></p>
+
+<button onclick="downloadPortfolio()">Download Portfolio Info</button>
+</section>
+
+<footer>
+<p>© 2026 Roblox Scripter Portfolio</p>
+</footer>
+
+<script>
+function downloadPortfolio(){
+const text=`Roblox Scripter Portfolio\n\nSystems I can script:\n- Round Systems\n- Inventory Systems\n- Ability Systems\n- DataStore Saving\n\nContact:\nDiscord: YourName#0000\nRoblox: YourUsername`;
+
+const blob=new Blob([text],{type:"text/plain"});
+const a=document.createElement("a");
+a.href=URL.createObjectURL(blob);
+a.download="portfolio.txt";
+a.click();
+}
+</script>
+
+</body>
+</html>
